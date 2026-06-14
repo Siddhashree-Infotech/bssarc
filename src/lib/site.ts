@@ -1,7 +1,7 @@
 export const site = {
   name: "B-SSARC Ventures",
   shortName: "B-SSARC",
-  domain: "https://bssarc.com",
+  domain: process.env.NEXT_PUBLIC_SITE_URL ?? "https://bssarc.com",
   tagline: "Integrated Security & Facility Services",
   motto: "Securing Trust. Managing Excellence.",
   description:
@@ -26,7 +26,7 @@ export const site = {
     locations: ["Bangalore", "Mumbai", "Hyderabad", "Chennai"],
   },
   compliance: ["GST", "MSME", "ESI", "PF Registered"],
-} as const;
+};
 
 export const navLinks = [
   { href: "/", label: "Home" },

@@ -8,7 +8,7 @@ export function ContactForm() {
       className="space-y-5"
     >
       <input type="hidden" name="_subject" value="New inquiry from bssarc.com" />
-      <input type="hidden" name="_next" value={`${site.domain}/contact/thank-you`} />
+      <input type="hidden" name="_next" value={`${site.domain}/contact/thank-you/`} />
       <input type="hidden" name="_captcha" value="false" />
       <input type="text" name="_honey" className="hidden" tabIndex={-1} autoComplete="off" />
 
